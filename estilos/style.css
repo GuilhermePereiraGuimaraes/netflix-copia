@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #222222;
+    --cor2: #F40612;
+    --cor3: #999999;
+
+    --fonte-principal: Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0px;
+    font-family: var(--fonte-principal);
+}
+body{
+    background-color: var(--cor1);    
+}
+nav{
+    width: 95%;
+    text-align: right;
+    padding: 25px;
+    background-color: transparent;
+}
+nav img{
+    width: 10%;
+    position: absolute;
+    right: 85%;
+}
+nav p{
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 2vh;
+}
+p#idioma{
+    padding: 10px;
+    margin-right: 30px;
+    border: 1px solid white;
+}
+p#login{
+    background-color: var(--cor2);
+    border-radius: 3px;
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+p#login:hover{
+    background-color: #fa4750;
+}
+p#login:active{
+    background-color: #a1030b;
+}
+header{
+    height: 100vh;
+    position: relative;
+    background: var(--cor1) no-repeat fixed;
+    background-image: linear-gradient(#000000e1, #00000057),url("../midia/imagens/background.jpg");
+    background-size: cover;
+}
+header>div{
+    position: absolute;
+    max-width: 800px;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 2.5em;
+    background-color: transparent;
+}
+header h1{
+    font-size: 8vh;
+    font-weight: bold;
+    line-height: 1.4em;
+}
+header h2{
+    font-size: 4vh;
+}
+header h3{
+    font-size: 3vh;
+    font-weight: normal;
+}
+section#pesquisa{
+    height: 40px;
+    padding: 10px;
+}
+section#pesquisa>input#caixa-texto{
+    width: 70%;
+    height: 8vh;
+    padding: 5px;
+    font-size: 4vh;
+}
+section#pesquisa>a#botao-pesquisa{
+    background-color: var(--cor2);
+    color: white;
+    text-decoration: none;
+    font-size: 3.9vh;
+    padding: 18px;
+    font-weight: bold;
+    margin: -4px;
+}
+section#pesquisa>a#botao-pesquisa:hover{
+    background-color: #fa4750;
+}
+section#pesquisa>a#botao-pesquisa:active{
+    background-color: #a1030b;
+}
+main>section,div{
+    background-color: black;
+    margin: 10px 0px;
+    color: white;
+}
+main>div h1{
+    font-size: 8vh;
+}
+main>div p{
+    font-size: 1.8em;
+}
+section.section-01{
+    position: relative;
+    text-align: right;
+    z-index: 0;
+    
+}
+div.texto-esquerda{
+    position: absolute;
+    text-align: left;
+    max-width: 40%;
+    padding: 20px;
+    display: inline-block;
+
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+div.texto-esquerda>h1{
+    font-size: 8vh;
+    line-height: 1em;
+}
+div.texto-esquerda>p{
+    margin-top: 10px;
+    font-size: 4.5vh;
+}
+img.tv-video{
+    width: 40%;
+    display: inline;
+    margin-right: 50px;
+    z-index: 0;
+    padding: 10px;
+    padding-bottom: 50px;
+    padding-top: 43px;
+}
+section.section-01>video{
+    z-index: -1;
+    width: 30%;
+    height: 56%;
+    display: inline-block;
+    position: absolute;
+    left: 61%;
+    top: 19%;
+}
+section.mobile{
+    text-align: right;
+    position: relative;
+}
+div.texto-direita{
+ max-width: 40%;
+ text-align: left;
+ padding: 20px;
+ display: inline-block;
+ position: absolute;
+
+ bottom: 50%;
+ left: 25%;
+ transform: translate(50%, 50%);
+}
+div.texto-direita>h1{
+    font-size: 8vh;
+    line-height: 1em;
+}
+div.texto-direita>p{
+    margin-top: 10px;
+    font-size: 4.5vh;
+}
+section.mobile img{
+    padding: 10px;
+    display: block;
+    width: 40%;
+    text-align: left;
+    padding-bottom: 50px;
+    padding-top: 55px;
+}
+video#video-02{
+    width: 29%;
+    height: 38%;
+    top: 16%;
+}
+
+
+aside#perguntas{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+aside#perguntas>h1{
+    font-size: 8vh;
+    padding: 45px 0px;
+}
+.escondido{
+    transition: 0.3s;
+    text-align: left;
+    width: 800px;
+    padding: 20px 40px;
+    font-size: 5vh;
+    color: white;
+    background-color: var(--cor1);
+    border: transparent;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.escondido>h1{
+    font-size: 0.9em;
+    font-weight: normal;
+}
+.escondido>h1::after{
+    position: absolute;
+    content: "➕";
+    left: 73%;
+}
+.escondido>div{
+    display: none;
+    background-color: var(--cor1);
+    transition: 0.3s;
+    padding: 10px;
+    border-top: black solid 1px;
+}
+.escondido>div>p{
+    text-align: justify;
+    margin: 20px 0px;
+    font-size: 0.9em;
+}
+.escondido:focus>div{
+    display: block;
+    transition: 0.3s;
+}
+.escondido:focus>h1::after{
+    content: "✖️";
+}
+footer{
+    margin-top: 10px;
+    padding: 15px;
+    text-align: left;
+    background-color: black;
+    color: var(--cor3);
+}
+footer>p {
+    margin: 80px;
+    margin-bottom: -80px;
+    margin-left: 80px;
+    padding: 15px;
+}
+footer>ul{
+    margin: 80px;
+    column-gap: 40px;
+    columns: 4;
+    line-height: 3em;
+    font-size: 2.1vh;
+    padding: 20px;
+    list-style-type: none;
+    list-style-position: inside;
+}
+footer li{
+    -webkit-column-break-inside: avoid;
+}
