@@ -61,14 +61,14 @@ header>div{
     max-width: 800px;
     color: white;
     text-align: center;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     line-height: 2.5em;
     background-color: transparent;
 }
 header h1{
-    font-size: 8vh;
+    font-size: 9vh;
     font-weight: bold;
     line-height: 1.4em;
 }
@@ -79,17 +79,18 @@ header h3{
     font-size: 3vh;
     font-weight: normal;
 }
+
 section#pesquisa{
     height: 40px;
     padding: 10px;
 }
-section#pesquisa>input#caixa-texto{
+input#caixa-texto{
     width: 70%;
     height: 8vh;
     padding: 5px;
     font-size: 4vh;
 }
-section#pesquisa>a#botao-pesquisa{
+a.botao-pesquisa{
     background-color: var(--cor2);
     color: white;
     text-decoration: none;
@@ -98,12 +99,13 @@ section#pesquisa>a#botao-pesquisa{
     font-weight: bold;
     margin: -4px;
 }
-section#pesquisa>a#botao-pesquisa:hover{
+a.botao-pesquisa:hover{
     background-color: #fa4750;
 }
-section#pesquisa>a#botao-pesquisa:active{
+a.botao-pesquisa:active{
     background-color: #a1030b;
 }
+
 main>section,div{
     background-color: black;
     margin: 10px 0px;
@@ -216,7 +218,6 @@ aside#perguntas>h1{
     background-color: var(--cor1);
     border: transparent;
     margin-bottom: 10px;
-    border-radius: 5px;
 }
 .escondido>h1{
     font-size: 0.9em;
@@ -246,6 +247,22 @@ aside#perguntas>h1{
 .escondido:focus>h1::after{
     content: "✖️";
 }
+aside#perguntas>h3{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+section#pesquisa-02{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#caixa-texto-02{
+    width: 30%;
+    height: 8vh;
+    padding: 5px;
+    font-size: 4vh;
+}
+
 footer{
     margin-top: 10px;
     padding: 15px;
@@ -253,14 +270,16 @@ footer{
     background-color: black;
     color: var(--cor3);
 }
-footer>p {
+p#duvidas{
     margin: 80px;
     margin-bottom: -80px;
     margin-left: 80px;
     padding: 15px;
+    font-size: 1em;
 }
 footer>ul{
     margin: 80px;
+    margin-bottom: 20px;
     column-gap: 40px;
     columns: 4;
     line-height: 3em;
@@ -269,6 +288,23 @@ footer>ul{
     list-style-type: none;
     list-style-position: inside;
 }
-footer li{
-    -webkit-column-break-inside: avoid;
+footer a{
+    text-decoration: none;
+    color: var(--cor3);
+}
+footer a:hover{
+    text-decoration: underline;
+}
+p#idioma-footer{
+    font-size: 1em;
+    padding: 15px;
+    width: 160px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    color: var(--cor3);
+    border: 1px solid var(--cor3);
+}
+footer>p{
+    font-size: 0.8em;
+    padding-left: 90px;
 }
