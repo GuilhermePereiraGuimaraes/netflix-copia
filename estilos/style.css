@@ -61,7 +61,7 @@ header{
 }
 header>div{
     position: absolute;
-    max-width: 50vw;
+    width: 51vw;
     color: white;
     text-align: center;
     top: 60%;
@@ -79,7 +79,7 @@ header h2{
     font-size: 2vw;
 }
 header h3{
-    font-size: 1vw;
+    font-size: 1.5vw;
     font-weight: normal;
 }
 
