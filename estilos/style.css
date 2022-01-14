@@ -18,7 +18,7 @@ html,body{
     background-color: var(--cor1);    
 }
 nav{
-    width: 85vw;
+    position: relative;
     text-align: right;
     padding: 25px;
     background-color: transparent;
@@ -33,23 +33,60 @@ nav p{
     display: inline-block;
     font-weight: bold;
     padding: 15px;
-    font-size: 1vw;
 }
-p#idioma{
-    padding: 10px;
-    margin-right: 30px;
+details#idioma{
+    display: inline;
+    padding:10px 20px;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
+#idioma>summary{
     border: 1px solid white;
+    padding: 10px;
+    border-radius: 3px;
 }
-p#login{
+#idioma>summary{
+    list-style: none;
+}
+#idioma>summary::after{
+    content: "▶";
+    padding: 5px;
+    transition: 0.3s;
+    display: inline-block;
+}
+details#idioma[open]>summary::after{
+    transform: rotate(90deg);
+}
+#idioma ul{
+    background-color: gray;
+    list-style: none; 
+    padding: 10px;
+}
+
+#idioma a{
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 3px 10px;
+}
+#idioma a:hover{
+    background-color: blueviolet;
+}
+a#login{
     background-color: var(--cor2);
     border-radius: 3px;
     padding: 10px 20px;
+    color: white;
+    text-decoration: none;
     transition: 0.4s;
+    font-size: 0.8em;
 }
-p#login:hover{
+a#login:hover{
     background-color: #fa4750;
 }
-p#login:active{
+a#login:active{
     background-color: #a1030b;
 }
 header{
@@ -233,11 +270,11 @@ aside#perguntas>h1{
     position: absolute;
     content: "➕";
     left: 73%;
+    transition: 0.3s;
 }
 .escondido>div{
     display: none;
     background-color: var(--cor1);
-    transition: 0.3s;
     padding: 10px;
     border-top: black solid 1px;
 }
@@ -248,10 +285,10 @@ aside#perguntas>h1{
 }
 .escondido:focus>div{
     display: block;
-    transition: 0.3s;
+    
 }
 .escondido:focus>h1::after{
-    content: "✖️";
+    transform: rotate(45deg);
 }
 aside#perguntas>h3{
     margin-top: 50px;
