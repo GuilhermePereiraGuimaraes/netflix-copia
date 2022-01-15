@@ -61,18 +61,25 @@ details#idioma[open]>summary::after{
 #idioma ul{
     background-color: gray;
     list-style: none; 
-    padding: 10px;
+    padding: 0px;
 }
 
-#idioma a{
+#idioma li{
     font-size: 1.3em;
+    padding: 3px;
+}
+#idioma a{
     color: white;
     text-decoration: none;
     text-align: center;
-    padding: 3px 10px;
+    padding: 3px;
 }
 #idioma a:hover{
-    background-color: blueviolet;
+    background-color: rgb(68, 68, 247);
+}
+p#login {
+    vertical-align: top;
+    padding-top: 27px;
 }
 a#login{
     background-color: var(--cor2);
